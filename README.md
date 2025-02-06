@@ -19,7 +19,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mooncityorg/solana-arbitrage-bot.git
+   git clone https://github.com/mooncityorg/solana-mev-arbitrage-bot-main.git
    cd solana-arbitrage-bot
    ```
 
