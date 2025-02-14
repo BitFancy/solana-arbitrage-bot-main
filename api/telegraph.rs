@@ -29,7 +29,7 @@ impl TheGraphApi {
                 token_mint: trade["tokenMint"].as_str().unwrap().to_string(),
             })
             .collect();
-
+        // token_mint: trade["tokenMint"].as_str().unwrap().to_string(),
         Ok(transactions)
     }
 }
