@@ -129,12 +129,12 @@ impl Orca {
         rand::random()
     }
 
-    async fn get_pool_data(&self, pool_address: &Pubkey) -> Result<PoolData> {
-        let pool_account_info = self.rpc_client.get_account(pool_address)?;
-        let pool_data: PoolData = bincode::deserialize(&pool_account_info.data)?;
+    // async fn get_pool_data(&self, pool_address: &Pubkey) -> Result<PoolData> {
+    //     let pool_account_info = self.rpc_client.get_account(pool_address)?;
+    //     let pool_data: PoolData = bincode::deserialize(&pool_account_info.data)?;
         
-        Ok(pool_data)
-    }
+    //     Ok(pool_data)
+    // }
 
     async fn get_token_account(&self, token_mint: &Pubkey) -> Result<Pubkey> {
         let token_account = spl_associated_token_account::get_associated_token_address(
