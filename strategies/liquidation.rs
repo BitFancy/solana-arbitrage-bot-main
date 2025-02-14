@@ -10,7 +10,6 @@ pub struct LiquidationStrategy {}
 #[async_trait]
 impl Strategy for LiquidationStrategy {
     fn update(&mut self, _market_conditions: &MarketConditions) {}
-
     async fn find_opportunities(&self, _target_accounts: &HashMap<Pubkey, crate::AccountInfo>) -> Vec<MevOpportunity> {
         Vec::new()
     }
