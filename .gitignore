@@ -1,0 +1,31 @@
+# Compiled output
+target/
+debug/
+release/
+
+# Executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# Rust format backup files
+**/*.rs.bk
+
+# Cargo lock file (optional)
+# Uncomment the following line if you want to ignore Cargo.lock for libraries
+# Cargo.lock
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Other files to ignore
+*.pdb  # Windows debugging information

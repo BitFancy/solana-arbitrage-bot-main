@@ -3,6 +3,14 @@ name = "mev-bot-solana"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "mev-bot-solana"
+path = "main.rs"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+path = "libs.rs"
+
 [dependencies]
 solana-client = "1.7.11"
 solana-sdk = "1.7.11"
